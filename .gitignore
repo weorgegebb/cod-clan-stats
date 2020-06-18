@@ -1,0 +1,6 @@
+creds.json
+run.sh
+tmp
+tmp/*
+.vscode
+.vscode/*
