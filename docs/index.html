@@ -1,10 +1,85 @@
+
+
+
+
 <!DOCTYPE html>
-<head>
-    <title>Shin Ramyum Cod Stats</title>
-</head>
-<html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.1.0.min.js" integrity="sha384-YobFyzPeVUsFQydHkJGsJL1kyfHnWxOlPc3EwaV22TmBaeGoXHLWx5aRRVPS9xlE" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
   <body>
-    <h1>Cod Stats</h1>
-    <p>will go here</p>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="b8a52b98-fcb8-4e01-99de-0b637844d504" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1204">
+          {"9762174c-2b9e-4d66-8534-fabdaacf4301":{"roots":{"references":[{"attributes":{"formatter":{"id":"1029"},"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{"fill_color":{"value":"#ffffbf"},"line_color":{"value":"#ffffbf"},"top":{"field":"SimWalson"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1064"}}},"id":"1066","type":"VBar"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#ffffbf"},"line_alpha":{"value":0.1},"line_color":{"value":"#ffffbf"},"top":{"field":"SimWalson"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1064"}}},"id":"1067","type":"VBar"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"source":{"id":"1001"}},"id":"1069","type":"CDSView"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#e6f598"},"line_alpha":{"value":0.1},"line_color":{"value":"#e6f598"},"top":{"field":"hillmaniaa"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1050"}}},"id":"1053","type":"VBar"},{"attributes":{"label":{"value":"SimWalson"},"renderers":[{"id":"1068"}]},"id":"1077","type":"LegendItem"},{"attributes":{"range":{"id":"1005"},"value":-0.19999999999999998},"id":"1036","type":"Dodge"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1094"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1095"},"selection_glyph":null,"view":{"id":"1097"}},"id":"1096","type":"GlyphRenderer"},{"attributes":{"fill_color":{"value":"#e6f598"},"line_color":{"value":"#e6f598"},"top":{"field":"hillmaniaa"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1050"}}},"id":"1052","type":"VBar"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto"},"id":"1020","type":"Toolbar"},{"attributes":{"fill_color":{"value":"#3288bd"},"line_color":{"value":"#3288bd"},"top":{"field":"kingfishy"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1021"}}},"id":"1023","type":"VBar"},{"attributes":{"data":{"Bonj-Welson":[1.7777777777777777,1.5,1.9090909090909092,1.5833333333333333,0.8571428571428571,0.5833333333333334,1.3125,1.0,1.5,3.0,2.6,2.1666666666666665,2.5,1.2857142857142858,1.8333333333333333,1.4285714285714286,0],"CrazyFoolJoe":[3.2,0.7333333333333333,0,1.25,0,2.0,1.2,1.0,0,0.42857142857142855,0.42857142857142855,1.1666666666666667,0.75,0,0,0,0],"SimWalson":[1.4545454545454546,1.1818181818181819,1.5,1.0,1.1666666666666667,0.0,1.3571428571428572,1.9230769230769231,0.5,1.0,2.6,0,0,0,1.8,0,3.6],"bouncybanana#6363912":[1.1666666666666667,0.6666666666666666,0,0.7777777777777778,0.8,1.0,2.8,0.5,0,0,0,0,0,0,1.5,0,1.2857142857142858],"hillmaniaa":[2.5,0.8181818181818182,2.0,3.0,1.4285714285714286,0.5,2.6666666666666665,0.7692307692307693,1.2,2.3333333333333335,0,0,0,1.1428571428571428,0.6666666666666666,2.4,1.1111111111111112],"kingfishy":[1.5,0.6428571428571429,0.375,0.7272727272727273,0.625,0.625,1.4,0.6666666666666666,3.0,0.8333333333333334,0.42857142857142855,0.8571428571428571,2.0,0.7142857142857143,0,0,1.3333333333333333],"maps":["backlot2","petrograd","cave","piccadilly","hackney","rust","crash2","hideout","vacant","runner","village2","emporium","spear","hardhat","m","deadzone","raid"],"omarbeancone":[1.5,0.3333333333333333,0,1.0,0,1.0,0.5,0,0,1.0,0,0,0,0.375,0,0,0]},"selected":{"id":"1032"},"selection_policy":{"id":"1033"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"fill_color":{"value":"#fc8d59"},"line_color":{"value":"#fc8d59"},"top":{"field":"omarbeancone"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1092"}}},"id":"1094","type":"VBar"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1038"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1039"},"selection_glyph":null,"view":{"id":"1041"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1052"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1053"},"selection_glyph":null,"view":{"id":"1055"}},"id":"1054","type":"GlyphRenderer"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#fc8d59"},"line_alpha":{"value":0.1},"line_color":{"value":"#fc8d59"},"top":{"field":"omarbeancone"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1092"}}},"id":"1095","type":"VBar"},{"attributes":{"label":{"value":"Bonj-Welson"},"renderers":[{"id":"1040"}]},"id":"1049","type":"LegendItem"},{"attributes":{"fill_color":{"value":"#99d594"},"line_color":{"value":"#99d594"},"top":{"field":"Bonj-Welson"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1036"}}},"id":"1038","type":"VBar"},{"attributes":{"label":{"value":"omarbeancone"},"renderers":[{"id":"1096"}]},"id":"1105","type":"LegendItem"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#99d594"},"line_alpha":{"value":0.1},"line_color":{"value":"#99d594"},"top":{"field":"Bonj-Welson"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1036"}}},"id":"1039","type":"VBar"},{"attributes":{"range":{"id":"1005"},"value":-0.09999999999999998},"id":"1050","type":"Dodge"},{"attributes":{"source":{"id":"1001"}},"id":"1097","type":"CDSView"},{"attributes":{},"id":"1029","type":"BasicTickFormatter"},{"attributes":{"range":{"id":"1005"},"value":5.551115123125783e-17},"id":"1064","type":"Dodge"},{"attributes":{"label":{"value":"hillmaniaa"},"renderers":[{"id":"1054"}]},"id":"1063","type":"LegendItem"},{"attributes":{"source":{"id":"1001"}},"id":"1041","type":"CDSView"},{"attributes":{"below":[{"id":"1013"}],"center":[{"id":"1015"},{"id":"1019"},{"id":"1034"}],"left":[{"id":"1016"}],"plot_height":350,"plot_width":1000,"renderers":[{"id":"1025"},{"id":"1040"},{"id":"1054"},{"id":"1068"},{"id":"1082"},{"id":"1096"},{"id":"1110"}],"title":{"id":"1003"},"toolbar":{"id":"1020"},"toolbar_location":null,"x_range":{"id":"1005"},"x_scale":{"id":"1009"},"y_range":{"id":"1007"},"y_scale":{"id":"1011"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{"range":{"id":"1005"},"value":0.3000000000000001},"id":"1106","type":"Dodge"},{"attributes":{"factors":["backlot2","petrograd","cave","piccadilly","hackney","rust","crash2","hideout","vacant","runner","village2","emporium","spear","hardhat","m","deadzone","raid"]},"id":"1005","type":"FactorRange"},{"attributes":{},"id":"1031","type":"CategoricalTickFormatter"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#3288bd"},"line_alpha":{"value":0.1},"line_color":{"value":"#3288bd"},"top":{"field":"kingfishy"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1021"}}},"id":"1024","type":"VBar"},{"attributes":{"source":{"id":"1001"}},"id":"1055","type":"CDSView"},{"attributes":{"end":4.1,"start":0},"id":"1007","type":"DataRange1d"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1023"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1024"},"selection_glyph":null,"view":{"id":"1026"}},"id":"1025","type":"GlyphRenderer"},{"attributes":{"formatter":{"id":"1031"},"ticker":{"id":"1014"}},"id":"1013","type":"CategoricalAxis"},{"attributes":{"source":{"id":"1001"}},"id":"1111","type":"CDSView"},{"attributes":{"label":{"value":"kingfishy"},"renderers":[{"id":"1025"}]},"id":"1035","type":"LegendItem"},{"attributes":{"range":{"id":"1005"},"value":0.10000000000000003},"id":"1078","type":"Dodge"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1080"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1081"},"selection_glyph":null,"view":{"id":"1083"}},"id":"1082","type":"GlyphRenderer"},{"attributes":{"items":[{"id":"1035"},{"id":"1049"},{"id":"1063"},{"id":"1077"},{"id":"1091"},{"id":"1105"},{"id":"1119"}],"orientation":"horizontal"},"id":"1034","type":"Legend"},{"attributes":{"fill_color":{"value":"#fee08b"},"line_color":{"value":"#fee08b"},"top":{"field":"CrazyFoolJoe"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1078"}}},"id":"1080","type":"VBar"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#fee08b"},"line_alpha":{"value":0.1},"line_color":{"value":"#fee08b"},"top":{"field":"CrazyFoolJoe"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1078"}}},"id":"1081","type":"VBar"},{"attributes":{"source":{"id":"1001"}},"id":"1026","type":"CDSView"},{"attributes":{"range":{"id":"1005"},"value":0.2},"id":"1092","type":"Dodge"},{"attributes":{"source":{"id":"1001"}},"id":"1083","type":"CDSView"},{"attributes":{"range":{"id":"1005"},"value":-0.3},"id":"1021","type":"Dodge"},{"attributes":{},"id":"1033","type":"UnionRenderers"},{"attributes":{"label":{"value":"CrazyFoolJoe"},"renderers":[{"id":"1082"}]},"id":"1091","type":"LegendItem"},{"attributes":{"text":"K/D per player by map"},"id":"1003","type":"Title"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#d53e4f"},"line_alpha":{"value":0.1},"line_color":{"value":"#d53e4f"},"top":{"field":"bouncybanana#6363912"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1106"}}},"id":"1109","type":"VBar"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1108"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1109"},"selection_glyph":null,"view":{"id":"1111"}},"id":"1110","type":"GlyphRenderer"},{"attributes":{},"id":"1011","type":"LinearScale"},{"attributes":{"fill_color":{"value":"#d53e4f"},"line_color":{"value":"#d53e4f"},"top":{"field":"bouncybanana#6363912"},"width":{"value":0.1},"x":{"field":"maps","transform":{"id":"1106"}}},"id":"1108","type":"VBar"},{"attributes":{},"id":"1009","type":"CategoricalScale"},{"attributes":{},"id":"1014","type":"CategoricalTicker"},{"attributes":{"label":{"value":"bouncybanana#6363912"},"renderers":[{"id":"1110"}]},"id":"1119","type":"LegendItem"},{"attributes":{"axis":{"id":"1013"},"grid_line_color":null,"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1066"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1067"},"selection_glyph":null,"view":{"id":"1069"}},"id":"1068","type":"GlyphRenderer"},{"attributes":{},"id":"1032","type":"Selection"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"2.1.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1204').textContent;
+                  var render_items = [{"docid":"9762174c-2b9e-4d66-8534-fabdaacf4301","root_ids":["1002"],"roots":{"1002":"b8a52b98-fcb8-4e01-99de-0b637844d504"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
   </body>
+  
 </html>
