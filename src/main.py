@@ -21,7 +21,7 @@ ps_players = [
 
 act_players = ["bouncybanana#6363912"]
 
-number_of_games = 1
+number_of_games = 150
 data_path = "data/search_data.csv"
 
 
@@ -197,7 +197,13 @@ async def get_data():
     return updated_data
 
 
-def plot_data(data):
+def plot_map_kds(data):
+    tools = "hover, save, reset"
+    TOOLTIPS = [
+        ("map", "@maps"),
+        ("player", "@top"),
+        ("kd", "@data")
+    ]
     output_file("docs/index.html")
 
     mapss = data["map"].unique().tolist()
@@ -229,8 +235,9 @@ def plot_data(data):
                plot_height=350,
                plot_width=1000,
                title="K/D per player by map",
-               toolbar_location=None,
-               tools="")
+               toolbar_location="left",
+               tools=tools,
+               tooltips=TOOLTIPS)
 
     for i, player in enumerate(players):
         p.vbar(x=dodge("maps", -0.3 + (0.1 * i), range=p.x_range),
@@ -250,9 +257,18 @@ def plot_data(data):
     show(p)
 
 
+def plot_map_wl(data):
+    pass
+
+
+def plot_data(data):
+    plot_map_kds(data)
+    plot_map_wl(data)
+
+
 async def main():
-    # data = await get_data()
-    data = pd.read_csv(data_path, index_col=0)
+    data = await get_data()
+    # data = pd.read_csv(data_path, index_col=0)
 
     # Plots
     plot_data(data)
